@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title>Department Faculty</title>
+
+</head>
+<body>
+    <center>
+        <h1>Software Construction</h1>
+        <h3>Group 2</h3>
+        <hr/>
+        <table border="1">
+            <tr>
+                <th>ID</th>
+                <th>Honorific</th>
+                <th>First Name</th>
+                <th>Middle</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Office</th>
+                <th>Research</th>
+                <th>Rank</th>
+                <th>Remarks</th>
+            </tr>
+            {% for result in data%}
+            <tr>
+                <td>{{result.id}}</td>
+                <td>{{result.honorific}}</td>
+                <td>{{result.first}}</td>
+                <td>{{result.mi}}</td>
+                <td>{{result.last}}</td>
+                <td>{{result.email}}</td>
+                <td>{{result.phone}}</td>
+                <td>{{result.office}}</td>
+                <td>{{result.researchinterests}}</td>
+                <td>{{result.rank}}</td>
+                <td>{{result.remarks}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
